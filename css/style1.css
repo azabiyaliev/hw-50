@@ -57,3 +57,22 @@ body {
     margin-right: 10px;
     border: 1px solid #fff;
 }
+
+.ingredients-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.ingredients-list a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #292929;
+}
+
+.ingredients-list li {
+    padding: 11px 0 11px 16px;
+}
+

@@ -52,11 +52,26 @@
         )
     });
 
+    const Aside = () => {
+        return (
+            <aside className="sidebar">
+                <nav className="ingredients">
+                    <ul className="ingredients-list">
+                        <li><a href="#">Фильмы</a></li>
+                        <li><a href="#">Сериалы</a></li>
+                        <li><a href="#">Мультфильмы</a></li>
+                        <li><a href="#">Аниме</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        )
+    }
+
     const Rezka = () => {
         return (
             <div>
                 <Header/>
-                <div className="content">{content}
+                <div className="content"> <Aside/> {content}
                 </div>
             </div>
         );
