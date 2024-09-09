@@ -1,0 +1,27 @@
+body {
+    background: url("https://img.freepik.com/free-photo/copy-space-cinema-equipment_23-2148470220.jpg?w=996&t=st=1725871119~exp=1725871719~hmac=ef5799cc2655d8d626f5c60820ffa033602e44ce0b78db2039d2f7b5ab2dac10");
+    background-size: cover;
+}
+
+.container {
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex;
+    justify-content: right;
+    margin-top: 50px;
+}
+
+.movie {
+    width: 225px;
+    min-height: 350px;
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    text-align: center;
+    margin-right: 10px;
+    border: 1px solid #fff;
+}
