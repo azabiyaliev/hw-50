@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+<div id="app"></div>
+
+<script type="text/babel">
+    const Movie = ({name, year, photo}) => {
+        return (
+            <div className="movie">
+                <h2>Название фильма: {name}</h2>
+                <p>Год выпуска: {year}</p>
+                <p><img width="100" src={photo} alt={name}/></p>
+            </div>
+        );
+    };
+
+    const movies = [{name:'Рок-н-рольщик', year:2008, photo: 'https://posmotreli.su/var/www/html/images/thumb/%D0%A0%D0%BE%D0%BA-%D0%BD-%D1%80%D0%BE%D0%BB%D1%8C%D1%89%D0%B8%D0%BA.jpg/300px-%D0%A0%D0%BE%D0%BA-%D0%BD-%D1%80%D0%BE%D0%BB%D1%8C%D1%89%D0%B8%D0%BA.jpg'}];
+    const app = document.getElementById('app');
+
+    const content = movies.map(movie => {
+        return (
+            <Movie name={movie.name} year={movie.year} photo={movie.photo}/>
+        )
+    })
+    ReactDOM.render(content, app);
+</script>
+</body>
+</html>
