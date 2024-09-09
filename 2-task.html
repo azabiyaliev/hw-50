@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+<div id="app" class="container"></div>
+<script type="text/babel">
+    const Header = () => {
+
+        return (
+            <header className="header">
+                    <nav className="nav-header container">
+                        <ul className="header-list">
+                            <li><a href="">Новинки</a></li>
+                            <li><a href="">Анонсы</a></li>
+                            <li><a href="">Подборки</a></li>
+                            <li><a href="">Отзывы</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </nav>
+            </header>
+        );
+    };
+
+    const app = document.getElementById('app');
+
+    ReactDOM.render(<Header/>, app);
+
+
+</script>
+</body>
+</html>
